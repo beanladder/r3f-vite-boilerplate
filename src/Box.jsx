@@ -1,11 +1,11 @@
 import * as THREE from 'three';
 import { useRef } from 'react';
-import { useFrame, ThreeElements } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import * as easing from 'maath/easing';
 
-export const Box = (props: ThreeElements['mesh']) => {
-  const ref = useRef<THREE.Mesh>(null!);
-  const material = useRef<THREE.MeshStandardMaterial>(null!);
+export const Box = (props) => {
+  const ref = useRef(null);
+  const material = useRef(null);
   const clicked = useRef(false);
   const hovered = useRef(false);
 
